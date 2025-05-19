@@ -1,5 +1,4 @@
-import { Logo } from "./Logo";
-
+import LogoIcon from "../assets/logo.svg?react";
 import styles from "./Header.module.css";
 
 export type HeaderProps = {
@@ -8,9 +7,11 @@ export type HeaderProps = {
 
 export const Header: React.FC<HeaderProps> = ({ title }) => {
   return (
-    <div className={styles.header}>
-      <div className={styles.logoContainer}>
-        <Logo />
+    <div className={styles.container}>
+      <div className={styles.leftContainer}>
+        <a href="/" className={styles.logo}>
+          <LogoIcon />
+        </a>
         <h1 className={styles.title}>{title}</h1>
       </div>
       <div>

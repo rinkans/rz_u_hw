@@ -16,20 +16,41 @@ h6,
 p,
 div,
 input,
-textarea {
+textarea,
+label {
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
   /* font-weight: <weight>; */
   font-style: normal;
   font-variation-settings: "wdth" 100;
+  font-size: 14px;
+  margin: 0;
 }
 
 :root {
-  --main-bg-color: #f4f5f6;
+  --main-bg-color: #fff;
+  --secondary-bg-color: #f4f5f6;
+  --logo-color: #50565e;
   --header-text-color: #808893;
   --input-bg: #f6f6f8;
   --outline-color: #006fff;
+  --button-text-color: #838691;
+  --button-active-bg-color: #f9fafa;
+
   --filter-panel-text-color: #bdbdbd;
+
   --table-main-text-color: #000000a6;
   --table-secondary-text-color: #00000073;
+  --table-border-color: #ededf0;
+
+  --checkbox-border-color: #b6b9c4;
+
+  --danger-color: #f03a3e;
+
+  --v-pad: 16px;
+  --h-pad: 32px;
+
+  --header-height: 50px;
+
+  --filter-panel-z: 3;
 }

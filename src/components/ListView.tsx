@@ -27,7 +27,7 @@ export const ListView: React.FC<ListViewProps> = ({ data }) => {
             <td>
               <ImageBouncer src={item.thumbnailImage} />
             </td>
-            <td>{item.productLine}</td>
+            <td className={styles.mainCell}>{item.productLine}</td>
             <td>{item.name}</td>
           </>
         )}

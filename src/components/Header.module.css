@@ -1,24 +1,42 @@
-.header {
-  background: var(--main-bg-color);
+.container {
+  background: var(--secondary-bg-color);
   display: flex;
-  padding: 0 32px;
+  padding: 0 var(--h-pad);
   justify-content: space-between;
-  height: 50px;
+  height: var(--header-height);
   align-items: center;
   position: sticky;
   top: 0;
 }
 
+.leftContainer {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.logo {
+  padding: 10px;
+  &:focus {
+    outline: 1px solid var(--outline-color);
+  }
+
+  svg {
+    display: block;
+
+    path {
+      fill: var(--logo-color);
+    }
+  }
+
+  &:hover path {
+    fill: var(--outline-color);
+  }
+}
+
 .title,
 .author {
-  font-size: 14px;
   font-weight: 400;
   margin: 0;
   color: var(--header-text-color);
-}
-
-.logoContainer {
-  display: flex;
-  gap: 30px;
-  align-items: center;
 }

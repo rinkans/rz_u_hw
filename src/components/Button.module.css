@@ -5,5 +5,26 @@
   height: 32px;
   display: flex;
   align-items: center;
-  color: #8c8c8c;
+  color: var(--button-text-color);
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 6px;
+  background: transparent;
+
+  &:hover {
+    background: var(--secondary-bg-color);
+  }
+
+  &:focus {
+    outline: 1px solid var(--outline-color);
+  }
+
+  &.active {
+    background: var(--button-active-bg-color);
+    color: var(--outline-color);
+
+    svg > path {
+      fill: var(--outline-color);
+    }
+  }
 }

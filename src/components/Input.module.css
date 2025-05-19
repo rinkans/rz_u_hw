@@ -3,13 +3,13 @@
 }
 
 .input {
+  display: block;
+  width: 100%;
   background: var(--input-bg);
   border: 0;
   border-radius: 4px;
   height: 32px;
   padding: 0 0 0 30px;
-  font-size: 14px;
-  width: 320px;
 
   &:focus {
     outline: 1px solid #006fff;
@@ -21,4 +21,5 @@
   left: 8px;
   top: 50%;
   transform: translateY(-50%);
+  pointer-events: none;
 }

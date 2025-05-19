@@ -1,0 +1,38 @@
+.container {
+  position: relative;
+}
+
+.multiSelectContainer {
+  position: absolute;
+  background: var(--main-bg-color);
+  border-radius: 8px;
+  box-shadow: 0px 16px 32px #1c1e2d33;
+  padding: var(--v-pad);
+  right: 0;
+
+  display: none;
+
+  &.visible {
+    display: block;
+  }
+}
+
+.multiSelectTitle {
+  font-weight: 600;
+  margin-bottom: var(--v-pad);
+  white-space: nowrap;
+}
+
+.resetButton {
+  color: var(--danger-color);
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  margin-top: 4px;
+
+  &.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+}
