@@ -1,15 +1,17 @@
 .container {
   position: relative;
+  white-space: nowrap;
 }
 
 .multiSelectContainer {
   position: absolute;
   background: var(--main-bg-color);
   border-radius: 8px;
-  box-shadow: 0px 16px 32px #1c1e2d33;
+  box-shadow: var(--default-box-shadow);
   padding: var(--v-pad);
   right: 0;
-
+  max-height: 320px;
+  overflow: auto;
   display: none;
 
   &.visible {
@@ -20,7 +22,6 @@
 .multiSelectTitle {
   font-weight: 600;
   margin-bottom: var(--v-pad);
-  white-space: nowrap;
 }
 
 .resetButton {

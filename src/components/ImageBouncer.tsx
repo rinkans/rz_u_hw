@@ -1,10 +1,10 @@
-import { useEffect, useRef } from "react";
+import { memo, useEffect, useRef } from "react";
 
 import styles from "./ImageBouncer.module.css";
 
 export type ImageBouncerProps = { src: string };
 
-export const ImageBouncer: React.FC<ImageBouncerProps> = ({ src }) => {
+export const ImageBouncer: React.FC<ImageBouncerProps> = memo(({ src }) => {
   const imgRef = useRef<HTMLImageElement>(null);
   const idRef = useRef<number | undefined>(undefined);
 
@@ -33,4 +33,4 @@ export const ImageBouncer: React.FC<ImageBouncerProps> = ({ src }) => {
       <img ref={imgRef} className={styles.image} />
     </div>
   );
-};
+});

@@ -18,6 +18,9 @@
     border-bottom: 1px solid var(--table-border-color);
     height: 32px;
     font-size: 14px;
+  }
+
+  thead th {
     background: var(--main-bg-color);
   }
 
@@ -30,6 +33,10 @@
 
     tr {
       cursor: pointer;
+      &:active,
+      &:focus-visible {
+        outline: 1px solid var(--outline-color);
+      }
       &:hover {
         background: var(--secondary-bg-color);
       }

@@ -2,7 +2,7 @@ import { memo, type ChangeEvent } from "react";
 
 import styles from "./Checkbox.module.css";
 
-import CheckboxIcon from "../assets/checkbox_icon.svg?react";
+import CheckboxIcon from "../assets/icons/checkbox_icon.svg?react";
 
 export type CheckBoxProps = {
   id?: string;

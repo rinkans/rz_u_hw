@@ -1,15 +1,32 @@
+import type { ChangeEvent, ReactNode } from "react";
 import styles from "./Input.module.css";
-import SearchIcon from "../assets/search_icon.svg?react";
 
 export type InputProps = {
+  icon?: ReactNode;
   placeholder: string;
+  value: string;
+  onChange: (value: string) => void;
 };
 
-export const Input: React.FC<InputProps> = ({ placeholder }) => {
+export const Input: React.FC<InputProps> = ({
+  icon,
+  placeholder,
+  value,
+  onChange,
+}) => {
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+    onChange(e.target.value);
+  };
+
   return (
     <div className={styles.container}>
-      <SearchIcon className={styles.icon} />
-      <input placeholder={placeholder} className={styles.input} />
+      {icon && <div className={styles.icon}>{icon}</div>}
+      <input
+        placeholder={placeholder}
+        className={styles.input}
+        value={value}
+        onChange={handleChange}
+      />
     </div>
   );
 };

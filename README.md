@@ -1,54 +1,25 @@
-# React + TypeScript + Vite
+# Ubiquiti homework by Rinalds Zukulis
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Links
 
-Currently, two official plugins are available:
+[Hosted web app](https://ubiquiti-rz.netlify.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## To Do, if would have more time
 
-## Expanding the ESLint configuration
+1. Performance optimisation
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Currently only checked some places for performance and seems fine, but could be better (example: MultiSelect)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Overall React Virtuoso works quite well (Big table would've been the biggest performance bottleneck)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. Improve css variable naming and placement
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+3. Did not have time to implement Grid view
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+4. Combine icons into font as that way would be able to get rid of icons as React Components
+
+5. Currently are using array index as id in Product view and also because of Next and Previous buttons to work. Probably should get better way of getting prev and next product, but that might need to come from backend.
+
+6. Might need to add better state management, but with current requirements, there was no need.
+
+7. Products -> FilterPanel = Currently both components save state, but could refactor to have single source of truth component
