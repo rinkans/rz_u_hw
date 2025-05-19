@@ -9,6 +9,7 @@
   height: 32px;
   padding: 0 0 0 30px;
   font-size: 14px;
+  width: 320px;
 
   &:focus {
     outline: 1px solid #006fff;

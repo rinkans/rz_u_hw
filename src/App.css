@@ -5,6 +5,8 @@ body {
   height: 50px;
 }
 
+th,
+td,
 h1,
 h2,
 h3,
@@ -28,4 +30,6 @@ textarea {
   --input-bg: #f6f6f8;
   --outline-color: #006fff;
   --filter-panel-text-color: #bdbdbd;
+  --table-main-text-color: #000000a6;
+  --table-secondary-text-color: #00000073;
 }

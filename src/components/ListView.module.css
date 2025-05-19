@@ -1,0 +1,38 @@
+.container {
+  height: calc(100vh - 114px);
+  padding: 0 32px;
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th {
+    font-weight: 500;
+  }
+
+  td,
+  th {
+    text-align: left;
+    border: 0;
+    border-bottom: 1px solid #ededf0;
+    height: 32px;
+    font-size: 14px;
+    background: #fff;
+  }
+
+  tbody {
+    color: var(--table-secondary-text-color);
+
+    .mainCell {
+      color: var(--table-main-text-color);
+    }
+
+    tr {
+      cursor: pointer;
+      &:hover {
+        background: var(--main-bg-color);
+      }
+    }
+  }
+}

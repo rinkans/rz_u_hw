@@ -1,0 +1,9 @@
+.container {
+  width: 32px;
+  height: 32px;
+}
+
+.image {
+  transition: opacity 400ms;
+  opacity: 0;
+}
