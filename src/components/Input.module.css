@@ -1,0 +1,23 @@
+.container {
+  position: relative;
+}
+
+.input {
+  background: var(--input-bg);
+  border: 0;
+  border-radius: 4px;
+  height: 32px;
+  padding: 0 0 0 30px;
+  font-size: 14px;
+
+  &:focus {
+    outline: 1px solid #006fff;
+  }
+}
+
+.icon {
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+}

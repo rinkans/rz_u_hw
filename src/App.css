@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+body {
+  margin: 0;
+  height: 50px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div,
+input,
+textarea {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+:root {
+  --main-bg-color: #f4f5f6;
+  --header-text-color: #808893;
+  --input-bg: #f6f6f8;
+  --outline-color: #006fff;
+  --filter-panel-text-color: #bdbdbd;
+}

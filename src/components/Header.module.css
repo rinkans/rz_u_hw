@@ -1,0 +1,22 @@
+.header {
+  background: var(--main-bg-color);
+  display: flex;
+  padding: 0 32px;
+  justify-content: space-between;
+  height: 50px;
+  align-items: center;
+}
+
+.title,
+.author {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  color: var(--header-text-color);
+}
+
+.logoContainer {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
